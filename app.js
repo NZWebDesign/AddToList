@@ -5,9 +5,11 @@ let addToListButton = document.querySelector(".addToListButton");
 addToListButton.addEventListener('click', function(){
  let newListItem = document.createElement('p');
  let listContent = document.createTextNode(listInput.value);
+
  newListItem.appendChild(listContent);
  newListItem.classList.add('p');
-  userList.appendChild(newListItem);
+ userList.appendChild(newListItem);
+
  listInput.value='';
 
  newListItem.addEventListener('click', function(){
